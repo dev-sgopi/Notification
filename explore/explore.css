@@ -1,0 +1,551 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex_space {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.primary-btn {
+  padding: 15px 40px;
+  background: #7fc142;
+  font-weight: bold;
+  color: white;
+}
+
+.secondary-btn {
+  padding: 15px 40px;
+  background: none;
+  border: 2px solid white;
+  font-weight: bold;
+  color: white;
+}
+
+.container {
+  max-width: 85%;
+  margin: auto;
+}
+
+/*--------header---------*/
+header {
+  height: 10vh;
+  line-height: 10vh;
+  padding: 0 20px;
+}
+
+header img {
+  margin: 20px 0;
+}
+
+header ul {
+  display: inline-block;
+}
+
+header ul li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+header ul li a {
+  color: #000;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+header ul li a:hover {
+  color: #7fc142;
+}
+
+header i {
+  margin: 0 20px;
+}
+
+header button {
+  padding: 13px 40px;
+}
+
+header .navlinks span {
+  display: none;
+}
+
+@media only screen and (max-width:768px) {
+  header ul {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #009f7f;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    text-align: center;
+    z-index: 9;
+  }
+
+  header ul li {
+    display: block;
+  }
+
+  header ul li a {
+    color: white;
+  }
+
+  header i {
+    color: white;
+  }
+
+  header .navlinks span {
+    color: black;
+    display: block;
+    cursor: pointer;
+    line-height: 10vh;
+    font-size: 25px;
+  }
+}
+
+/*--------header---------*/
+/*--------home---------*/
+.home {
+  height: 100vh;
+  color: #fff;
+}
+
+.home img {
+  width: 100%;
+  height: 100vh;
+}
+
+.home .text {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+}
+
+.home .text h1 {
+  font-size: 80px;
+  font-family: serif;
+  font-weight: 400;
+}
+
+.home p {
+  margin: 20px 0;
+}
+
+.home button {
+  margin-right: 20px;
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+  position: absolute;
+  top: 40%;
+  height: 50px;
+  width: 50px;
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: #fff;
+}
+
+.owl-nav .owl-prev {
+  left: 0;
+}
+
+.owl-nav .owl-next {
+  right: 0;
+}
+
+/*--------home---------*/
+/*--------book---------*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+input {
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.book {
+  padding: 40px 0;
+  background: #282834;
+  color: #fff;
+}
+
+h1 {
+  font-family: serif;
+}
+
+.book h1 {
+  font-size: 28px;
+}
+
+.book h1 span {
+  color: #7fc142;
+}
+
+.book input {
+  padding: 20px;
+}
+
+.book input:nth-last-child(1) {
+  background: #7fc142;
+  cursor: pointer;
+  
+  color: #fff;
+}
+.book input:nth-last-child(1):hover{
+    background-color: #97b263;
+  
+}
+/*--------book---------*/
+/*--------about---------*/
+.left, .right {
+  width: 50%;
+  padding: 30px;
+}
+
+.top {
+  margin-top: 80px;
+}
+
+.mtop {
+  margin-top: 40px;
+}
+
+.heading h1 {
+  font-size: 50px;
+  font-weight: 300;
+  opacity: 0.1;
+  font-family: serif;
+  position: absolute;
+  top: -30px;
+}
+
+.heading h2 {
+  margin: 30px 0;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: 400;
+}
+
+.about .heading h1 {
+  top: 55px;
+}
+
+.about {
+  position: relative;
+}
+
+.about .left {
+  margin-top: 30px;
+}
+
+.about p {
+  font-size: 15px;
+}
+
+.about button {
+  margin: 30px 0;
+}
+
+/*--------about---------*/
+/*--------counter---------*/
+.counter {
+  background-image: url("../images/background-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 100%;
+  color: #fff;
+}
+
+.counter .grid {
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  place-items: center;
+  padding-top: 60px;
+}
+
+.counter h1 {
+  font-size: 50px;
+}
+
+.counter hr {
+  width: 50%;
+  margin: 10px auto;
+  background: #7fc142;
+  height: 2px;
+  border: none;
+}
+
+
+/* things to do */
+.hero-section {
+  background-color: #ffffff; /* Replace with your desired background color */
+  padding: 100px 0;
+  text-align: center;
+}
+
+.containers1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: -150px;
+}
+.vertical-line {
+  border-left: 1px solid rgb(255, 0, 0); /* Adjust the width and color of the line */
+  height: 150px;               /* Adjust the height of the line */
+  
+  margin: 0 10px;               /* Spacing between the content and line */
+}
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  margin-top: 120px;
+  font-size: 40px;
+  font-weight:lighter;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feature {
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+}
+
+.feature h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.hero-cta {
+  margin-top: 40px;
+}
+
+.hero-cta p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.hero-cta button {
+  background-color: #000000;
+  color: #fff;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+/* things */
+.custom-line {
+  margin-top: 30px;
+  border: none; /* Remove default border */
+  height: 2px; /* Thickness of the line */
+  background-color: #000; /* Black color */
+  width: 80%; /* Make it 80% of the page width */
+  margin: 20px auto; /* Center the line and add spacing */
+}
+.things-to-do {
+  /* margin-top: 5px; */
+  text-align: center;
+  margin: 20px 0;
+}
+
+.things-to-do h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 30px;  /* Rounded corners */
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn.active {
+  background-color: #6e5e52; /* Similar brown color for "All" button */
+  color: white;
+}
+
+.btn.spa {
+  background-color: #333; /* Darker color for "Spa" button */
+  color: white;
+}
+
+.btn:hover {
+  background-color: #333;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .buttons-container {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+}
+
+/* Card Styles */
+/* Highlighting the selected card */
+.card.highlight {
+  background-color: #f0e6e6; /* Light background for highlight */
+  border: 2px solid #6e5e52; /* Adding a border to highlight */
+  transform: scale(1.05); /* Slightly increasing the size for emphasis */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cards {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: 270px;
+  margin-right: 270px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #efebeb;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 16px;
+  color: #6e5e52;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card h2 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.card h2 a:hover {
+  color: #6e5e52;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.card .phone {
+  font-size: 14px;
+  color: #6e5e52;
+  text-decoration: none;
+}
+
+.card .phone:hover {
+  text-decoration: underline;
+}
+
+.activities-section {
+  text-align: center;
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the section horizontally */
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.activities-section h2 {
+  font-size: 24px;
+  font-weight:100;
+  margin-bottom: 20px;
+}
+
+.activity-list {
+  list-style: none;
+  padding: 0;
+}
+
+.activity-item {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.activity-item h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.activity-item p {
+  font-size: 12px;
+  font-weight: 200;
+  margin: 0;
+}
